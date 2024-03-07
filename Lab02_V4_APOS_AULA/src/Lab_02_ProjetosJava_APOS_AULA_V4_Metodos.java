@@ -14,7 +14,7 @@
 import java.util.Scanner;
 
 // classe que contém os MÉTODOS que executam as ações
-public class Lab_02_ProjetosJava_ANTES_AULA_V4_Metodos {
+public class Lab_02_ProjetosJava_APOS_AULA_V4_Metodos {
 
  	// case 1 : exibe pares
 	 private void exibePares(Scanner teclado) {

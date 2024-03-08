@@ -1,2 +1,2 @@
-# Lab4
-Lab do dia 07-03-2024
+#LABS  
+Neste repositório, ficará presente todos os labs feitos nas aulas do professor Carlos Magnus.

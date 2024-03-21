@@ -19,7 +19,7 @@ public class Autor {
 		System.out.println("Lab.: ARRAYS - BUSCA E CLASSIFICAÇÃO");
 		System.out.println("------------------------------------");
 		System.out.println("Nome: MATHEUS EVANGELISTA RODRIGUES");
-		System.out.println("R.A.: 121 092 AAS P NNN");
+		System.out.println("R.A.: 121 092 231 1 004");
 		System.out.println("------------------------------------");
 		System.out.println();
 	

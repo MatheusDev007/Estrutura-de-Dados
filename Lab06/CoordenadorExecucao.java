@@ -35,6 +35,7 @@ public class CoordenadorExecucao {
         Integer[] intArrayE = { 1, 2, 3, 4, 5, 6, 7 };
         Double[] doubleArrayE = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
         // AQUI ...
+        String[] stringArrayE = { "Matheus", "Evangelista", "Rodrigues" };
 
         // declaração de variáveis a serem usadas (independentemente da Atividade)
         int escolha;
@@ -193,6 +194,8 @@ public class CoordenadorExecucao {
 
                     // acionamento do método para impressão do 'array' de objetos 'String'
                     // AQUI ...
+                    System.out.println("Exibindo conteúdo do 'array' de 'String':");
+                    generico.printArray(stringArrayE);
 
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...

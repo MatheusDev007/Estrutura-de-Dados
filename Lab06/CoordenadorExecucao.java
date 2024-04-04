@@ -23,15 +23,19 @@ public class CoordenadorExecucao {
         final int METODOS_GENERICOS = 3;
         final int SAIR = 9;
 
-        // cria arrays de 'int', 'double' e 'String' para os testes INDEPENDENTES e SOBRECARREGADOS
-        int[]    intArray     = {  1,   2,   3,   4,   5,   6,   7};
-        double[] doubleArray  = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
+        // cria arrays de 'int', 'double' e 'String' para os testes INDEPENDENTES e
+        // SOBRECARREGADOS
+        int[] intArray = { 1, 2, 3, 4, 5, 6, 7 };
+        double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
         // AQUI ...
+        String[] stringArray = { "Matheus", "Evangelista", "Rodrigues" };
 
-        // cria arrays de 'Integer', 'Double' e 'String' ('reference types') para os testes GENERICOS
-        Integer[] intArrayE     = {  1,   2,   3,   4,   5,   6,   7};
-        Double[]  doubleArrayE  = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
+        // cria arrays de 'Integer', 'Double' e 'String' ('reference types') para os
+        // testes GENERICOS
+        Integer[] intArrayE = { 1, 2, 3, 4, 5, 6, 7 };
+        Double[] doubleArrayE = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
         // AQUI ...
+        String[] stringArrayE = { "Matheus", "Evangelista", "Rodrigues" };
 
         // declaração de variáveis a serem usadas (independentemente da Atividade)
         int escolha;
@@ -58,7 +62,7 @@ public class CoordenadorExecucao {
                 case METODOS_INDEPENDENTES:
                     System.out.println("Atividade 1: Teste de Métodos Independentes !");
                     System.out.println("---------------------------------------------");
-                    
+
                     // instanciação de um objeto da classe 'MetodosIndependentes'
                     MetodosIndependentes independente = new MetodosIndependentes();
 
@@ -69,64 +73,76 @@ public class CoordenadorExecucao {
                     // acionamento do método para impressão do 'array' de 'double'
                     System.out.println("Exibindo conteúdo do 'array' de 'double':");
                     independente.printArrayDouble(doubleArray);
-                    
+
                     // acionamento do método para impressão do 'array' de 'String'
                     // AQUI ...
+                    System.out.println("Exibindo conteúdo do 'array de 'String");
+                    independente.printArrayString(stringArray);
 
                     // declaração de variável auxiliar para indicar o resultado da busca
                     int rBI;
-                    
+
                     // exemplo de busca por um conteúdo no 'array' de 'int'
                     // 1. conteúdo existente
                     System.out.print("Buscando o conteúdo 5 no 'array' de 'int' ... ");
-                    rBI = independente.buscaArrayInt(intArray,5);
-                    if ( rBI == -1 ) {
+                    rBI = independente.buscaArrayInt(intArray, 5);
+                    if (rBI == -1) {
                         System.out.println("NÃO ENCONTRADO !");
-                    }
-                    else {
+                    } else {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
                     // 2. conteúdo inexistente
                     System.out.print("Buscando o conteúdo 9 no 'array' de 'int' ... ");
-                    rBI = independente.buscaArrayInt(intArray,9);
-                    if ( rBI == -1 ) {
+                    rBI = independente.buscaArrayInt(intArray, 9);
+                    if (rBI == -1) {
                         System.out.println("NÃO ENCONTRADO !");
-                    }
-                    else {
+                    } else {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
 
                     // exemplo de busca por um conteúdo no 'array' de 'double'
                     // 1. conteúdo existente
                     System.out.print("Buscando o conteúdo 5.5 no 'array' de 'double' ... ");
-                    rBI = independente.buscaArrayDouble(doubleArray,5.5);
-                    if ( rBI == -1 ) {
+                    rBI = independente.buscaArrayDouble(doubleArray, 5.5);
+                    if (rBI == -1) {
                         System.out.println("NÃO ENCONTRADO !");
-                    }
-                    else {
+                    } else {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
                     // 2. conteúdo inexistente
-                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'int' ... ");
-                    rBI = independente.buscaArrayDouble(doubleArray,9.9);
-                    if ( rBI == -1 ) {
+                    System.out.print("Buscando o conteúdo 9.9 no 'array' de 'double' ... ");
+                    rBI = independente.buscaArrayDouble(doubleArray, 9.9);
+                    if (rBI == -1) {
                         System.out.println("NÃO ENCONTRADO !");
-                    }
-                    else {
+                    } else {
                         System.out.println("ENCONTRADO na posição " + rBI);
                     }
 
                     // exemplo de busca por um conteúdo no 'array' de 'String'
                     // 1. conteúdo existente
+                    System.out.print("Buscando o conteúdo 'Rodrigues' no 'array' de 'String' ... ");
+                    rBI = independente.buscaArrayString(stringArray, "Rodrigues");
+                    if (rBI == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    }
                     // 2. conteúdo inexistente
                     // AQUI ...
+                    System.out.print("Buscando o conteúdo 'Neto' no 'array' de 'String' ... ");
+                    rBI = independente.buscaArrayString(stringArray, "Neto");
+                    if (rBI == -1) {
+                        System.out.println("NÃO ENCONTRADO !");
+                    } else {
+                        System.out.println("ENCONTRADO na posição " + rBI);
+                    }
 
                     break;
 
                 case METODOS_SOBRECARREGADOS:
                     System.out.println("Atividade 2: Teste de Métodos Sobrecarregados !");
                     System.out.println("-----------------------------------------------");
-                    
+
                     // instanciação de um objeto da classe 'MetodosIndependentes'
                     MetodosSobrecarregados sobrecarregado = new MetodosSobrecarregados();
 
@@ -137,13 +153,13 @@ public class CoordenadorExecucao {
                     // acionamento do método para impressão do 'array' de 'double'
                     System.out.println("Exibindo conteúdo do 'array' de 'double':");
                     sobrecarregado.printArray(doubleArray);
-                    
+
                     // acionamento do método para impressão do 'array' de 'String'
                     // AQUI ...
-                    
+
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
-                    
+
                     // exemplo de busca por um conteúdo no 'array' de 'int'
                     // 1. conteúdo existente
                     // 2. conteúdo inexistente
@@ -164,7 +180,7 @@ public class CoordenadorExecucao {
                 case METODOS_GENERICOS:
                     System.out.println("Atividade 3: Teste de Métodos Genericos !");
                     System.out.println("-----------------------------------------");
-                    
+
                     // instanciação de um objeto da classe 'MetodosIndependentes'
                     MetodosGenericos generico = new MetodosGenericos();
 
@@ -175,13 +191,15 @@ public class CoordenadorExecucao {
                     // acionamento do método para impressão do 'array' de objetos 'Double'
                     System.out.println("Exibindo conteúdo do 'array' de 'Double':");
                     generico.printArray(doubleArrayE);
-                    
+
                     // acionamento do método para impressão do 'array' de objetos 'String'
                     // AQUI ...
-                    
+                    System.out.println("Exibindo conteúdo do 'array' de 'String':");
+                    generico.printArray(stringArrayE);
+
                     // declaração de variável auxiliar para indicar o resultado da busca
                     // AQUI ...
-                    
+
                     // exemplo de busca por um conteúdo no 'array' de objetos 'Integer'
                     // 1. conteúdo existente
                     // 2. conteúdo inexistente
@@ -214,13 +232,13 @@ public class CoordenadorExecucao {
         // criação de uma instância (objeto) da classe 'Autor' para permitir o acesso
         // aos respectivos métodos
         Autor autor = new Autor();
-        
+
         // aciona método para exibição dos dados do autor do trabalho
         autor.exibeDadosAutor("2024/1S",
-                       "MÉTODOS GENÉRICOS em JAVA", 
-                       "CARLOS MAGNUS CARLSON FILHO", 
-                       "121 092 AAS P NNN");
+                "MÉTODOS GENÉRICOS em JAVA",
+                "MATHEUS EVANGELISTA RODRIGUES",
+                "121 092 231 1 004 ");
 
     }
-    
+
 }

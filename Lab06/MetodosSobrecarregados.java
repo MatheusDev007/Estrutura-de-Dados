@@ -26,6 +26,12 @@ public class MetodosSobrecarregados {
 
     // método printArray para imprimir um array de 'String'
     // AQUI ...
+    public void printArray(String[] inputArray) {
+        for (String element : inputArray) {
+            System.out.printf("%5s ", element);       // exibe elementos do array
+        }
+        System.out.println();
+    } // fim do método printArray – versão 'String'
 
     // método buscaArray para buscar um conteúdo ('key') num array de 'int'
     // retorna a posição em que o conteúdo foi encontrado no array ou -1 se não encontrou
